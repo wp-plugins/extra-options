@@ -30,17 +30,16 @@ This section describes how to install the plugin and get it working.
 
 **Useage:**
 
-**roamfox_fetch_option_content($option_name)** $option_name is the value of the first column of the row
-
 example: 
 <?php
+	//roamfox_fetch_option_content($option_name) $option_name is the value of the first column of the row
 	roamfox_fetch_option_content('twitter') //returns 'roamfox'
 ?>
 
-
-**roamfox_fetch_single_option($option_name)**  $option_name is the value of the first column in a row ,returns the data of row
 example: 
 <?php
+	//roamfox_fetch_single_option($option_name)  $option_name is the value of the first column in a row ,returns the data of row
+	
 	$roamfox_option =  roamfox_fetch_single_option('twitter')
 	
 	//$roamfox_option is like this
@@ -49,9 +48,10 @@ example:
 	$roamfox_option['description']='this is my twitter account'
 ?>
 
-**roamfox_fetch_options()** returns all the options data of your xml as a array
 example: 
 <?php
+
+	//roamfox_fetch_options() returns all the options data of your xml as a array
 	$roamfox_options =  roamfox_fetch_options()
 	
 	//$roamfox_options is like this
