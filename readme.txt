@@ -15,8 +15,8 @@ This plugin is mainly for themes developers to save the themes data via a xml fi
 Or If you are a normal user know a little about the wordpress theme,and can code a little,this plugin will actually help you!
 
 Why roamfox extra options:
- 1.use xml to save the data and add no extra date to your database. It is clean and green.
- 2.define any date you want with no restrict in template even if you have no access to the user database
+1. use xml to save the data and add no extra date to your database. It is clean and green.
+2. define any date you want with no restrict in template even if you have no access to the user database
  
 I strongly recommand that you integrate this plugin into your themes.
 
@@ -28,9 +28,9 @@ This section describes how to install the plugin and get it working.
 1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
-Useage:
+**Useage:**
 
-roamfox_fetch_option_content($option_name) $option_name is the value of the first column of the row
+**roamfox_fetch_option_content($option_name)** $option_name is the value of the first column of the row
 
 example: 
 <?php
@@ -38,7 +38,7 @@ example:
 ?>
 
 
-roamfox_fetch_single_option($option_name)  $option_name is the value of the first column in a row ,returns the data of row
+**roamfox_fetch_single_option($option_name)**  $option_name is the value of the first column in a row ,returns the data of row
 example: 
 <?php
 	$roamfox_option =  roamfox_fetch_single_option('twitter')
@@ -49,7 +49,7 @@ example:
 	$roamfox_option['description']='this is my twitter account'
 ?>
 
-roamfox_fetch_options() returns all the options data of your xml as a array
+**roamfox_fetch_options()** returns all the options data of your xml as a array
 example: 
 <?php
 	$roamfox_options =  roamfox_fetch_options()
