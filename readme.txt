@@ -6,7 +6,7 @@ Requires at least: 2.0.2
 Tested up to: 2.71
 Stable tag: trunk
 
-This plugin is mainly for themes developers to save the themes data via a xml file.
+This plugin is mainly for themes developers to save the theme data via a xml file.
 
 == Description ==
 
@@ -27,31 +27,34 @@ This section describes how to install the plugin and get it working.
 
 1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3.
-Useage:(if you are still can not understant pls open the attached screenshot,may be help. or visit our site to get a help)
+
+Useage:
 
 roamfox_fetch_option_content($option_name) $option_name is the value of the first column of the row
 
-example: roamfox_fetch_option_content('twitter') returns 'roamfox'
+example: 
+<?php
+	roamfox_fetch_option_content('twitter') //returns 'roamfox'
+?>
 
 
 roamfox_fetch_single_option($option_name)  $option_name is the value of the first column in a row ,returns the data of row
-
 example: 
+<?php
 	$roamfox_option =  roamfox_fetch_single_option('twitter')
 	
-	$roamfox_option is like this
-	
+	//$roamfox_option is like this
 	$roamfox_option['name']='twitter';
 	$roamfox_option['content']='roamfox';
 	$roamfox_option['description']='this is my twitter account'
-
+?>
 
 roamfox_fetch_options() returns all the options data of your xml as a array
-	
+example: 
+<?php
 	$roamfox_options =  roamfox_fetch_options()
 	
-	$roamfox_options is like this
+	//$roamfox_options is like this
 	$roamfox_option[0]['name']='twitter';
 	$roamfox_option[0]['content']='roamfox';
 	$roamfox_option[0]['description']='this is my twitter account'
@@ -59,25 +62,18 @@ roamfox_fetch_options() returns all the options data of your xml as a array
 	$roamfox_option[1]['name']='options_name';
 	$roamfox_option[1]['content']='option_content';
 	$roamfox_option[1]['description']='option_description';
-
+?>
 
 == Frequently Asked Questions ==
-faq
 
-= A question that someone might have =
-question some have
-
-= What about foo bar? =
-foo bar.
 
 == Screenshots ==
 
-screenshots desp
+
 
 == Arbitrary section ==
 
-I have not fill 
+
 
 == A brief Markdown Example ==
 
-brief
